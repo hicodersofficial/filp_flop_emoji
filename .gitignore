@@ -1,0 +1,7 @@
+# Local Netlify folder
+.netlify
+.vscode
+/assets
+/privacy
+.prettierrc.js
+names.json

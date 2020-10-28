@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flip Flop Emoji</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="mask-icon" sizes="any" href="logo.svg" color="#1da1f2" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="192x192" href="logo.png" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+        <script
+            src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav>
+            <i id="vol" class="fas"></i>
+            <div class="layout-container">
+                <div
+                    class="layout-btn scale utils"
+                    style="background: linear-gradient(45deg, #ff7ec1, #eeac8b)"
+                    data-layout="linear-gradient(45deg, #ff7ec1, #eeac8b)"
+                ></div>
+                <div
+                    class="layout-btn scale utils"
+                    style="
+                        background: linear-gradient(-45deg, #00f8ff, #0090ff);
+                    "
+                    data-layout="linear-gradient(-45deg, #00f8ff, #0090ff)"
+                ></div>
+                <div
+                    class="layout-btn scale utils"
+                    style="background: linear-gradient(45deg, #dfad00, #e67600)"
+                    data-layout="linear-gradient(45deg, #dfad00, #e67600)"
+                ></div>
+                <div
+                    class="layout-btn scale utils"
+                    style="background: #3d3d3d"
+                    data-layout="#3d3d3d"
+                ></div>
+                <div
+                    class="layout-btn scale utils"
+                    style="background: linear-gradient(45deg, #007579, #000000)"
+                    data-layout="linear-gradient(45deg, #000000, #007579)"
+                ></div>
+            </div>
+        </nav>
+        <div class="modal">
+            <div class="modal-content">
+                <div class="user-info">
+                    <div class="img-con">
+                        <img
+                            src="https://flip.chattgo.com/logo.png"
+                            width="75"
+                            id="level-img"
+                        />
+                    </div>
+                    <div class="user">
+                        <div contenteditable="true" id="username">
+                            Type Username
+                        </div>
+                        <div>Level: <span id="level">0</span></div>
+                    </div>
+                </div>
+                <h1 class="game-name">
+                    <span id="type"></span
+                    ><span class="cursor" id="cursor">|</span>
+                </h1>
+                <button id="play" style="display: none">Resume</button>
+                <button id="new-game">New Game</button>
+                <button id="random">Play Random</button>
+            </div>
+        </div>
+        <section id="game-con">
+            <time></time>
+            <div class="container" id="container"></div>
+        </section>
+        <audio
+            id="win-final"
+            src="https://flip.chattgo.com/assets/media/zap.mp3"
+        ></audio>
+        <audio
+            id="insomnia"
+            loop
+            src="https://flip.chattgo.com/assets/media/insomnia.mp3"
+        ></audio>
+        <audio
+            id="flip"
+            src="https://flip.chattgo.com/assets/media/flip.mp3"
+        ></audio>
+        <audio
+            id="one-win"
+            src="https://flip.chattgo.com/assets/media/one-win.mp3"
+        ></audio>
+        <audio
+            id="clickable"
+            src="https://flip.chattgo.com/assets/media/notification.20576730.mp3"
+        ></audio>
+        <address></address>
+        <div class="setting">
+            <i class="fas fa-cog" id="menu"></i>
+        </div>
+        <!-- <div id="editable" contenteditable="true">
+            Hello <img src="https://flip.chattgo.com/assets/72x72/1f0cf.png" /> world
+        </div> -->
+        <script src="./main.js"></script>
+    </body>
+</html>

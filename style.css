@@ -1,0 +1,400 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    /* overflow: hidden; */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff7ec1, #eeac8b);
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+.user {
+    margin-left: 1rem;
+}
+#username {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.user-info {
+    color: #fff;
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+}
+
+.img-con {
+    background-color: #eee;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+section .container {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 237, 255);
+}
+section .emoji-container,
+.emoji,
+.inner-div {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.layout-container {
+    /* padding: 10px; */
+    display: flex;
+}
+.layout-btn {
+    margin: 14px 0.4rem;
+    border: 3px solid #fff;
+    width: 1rem;
+    height: 1rem;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.utils {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.scale.utils:hover {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
+
+section .emoji-container {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+    perspective: 1500px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+section .emoji-container:active,
+.emoji:active,
+.emoji-container .inner-div:active {
+    transition: transform 0.1s;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transition: transform 0.1s;
+    -moz-transition: transform 0.1s;
+    -ms-transition: transform 0.1s;
+    -o-transition: transform 0.1s;
+}
+/*
+
+section .emoji-container:hover > .emoji {
+  z-index: 1;
+}
+
+section .emoji-container:hover > .inner-div {
+  z-index: -1;
+} */
+
+h1 {
+    font-size: 3rem;
+}
+h1 .cursor {
+    font-family: "nunito";
+    font-weight: 300;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.781);
+    z-index: 99999;
+}
+
+.modal-content {
+    /* background-color: #fff; */
+}
+
+.modal-content button {
+    border: none;
+    background: orangered;
+    padding: 0.8rem 0.5rem;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.671);
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    width: 18rem;
+    color: #fff;
+}
+
+.modal-content button:hover {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+h1,
+h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.game-name {
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+time {
+    /* position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10%; */
+    padding-bottom: 1rem;
+}
+.setting {
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+}
+
+.setting i {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+}
+
+.setting i:hover {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.setting i:active {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+#vol {
+    /* position: fixed;
+    top: 10px;
+    left: 10px; */
+    padding: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content button:active {
+    transition: all 0.2s;
+    transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -o-transform: translateY(3px);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.emoji,
+.emoji-container .inner-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.win .emoji {
+    background: linear-gradient(45deg, rgb(57, 7, 175), rgb(3, 97, 238));
+}
+/* 
+.emoji {
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+} */
+
+.warning {
+    transition: all 0.4s;
+    background-color: rgb(247, 0, 95);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    animation: wobble 0.3s linear infinite;
+    -webkit-animation: wobble 0.3s linear infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.cursor {
+    color: orange;
+}
+
+.blink {
+    margin: 0;
+    padding: 0;
+    animation: typing 3.5s, blink-caret 0.75s step-end infinite;
+    -webkit-animation: typing 3.5s, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: orange;
+    }
+}
+
+@keyframes wobble {
+    0% {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
+time {
+    padding-top: 10px;
+}
+
+@media (max-width: 500px) {
+    section .container {
+        width: 350px;
+    }
+    section .emoji-container {
+        width: 66px;
+        margin: 2px;
+        height: 66px;
+    }
+    .modal-content button {
+        padding: 0.9rem 2rem;
+        font-size: 1.2rem;
+        width: 15rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    section .container {
+        width: 250px;
+    }
+    section .emoji-container {
+        height: 48px;
+        margin: 1px;
+        width: 48px;
+    }
+}
